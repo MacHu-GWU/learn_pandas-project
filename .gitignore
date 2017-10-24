@@ -1,5 +1,8 @@
 # User Settings
-*.csv
+learn_pandas_venv/
+learn_pandas.egg-info/
+learn_pandas-*/
+index.rst
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

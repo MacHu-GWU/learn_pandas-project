@@ -5,3 +5,9 @@ __version__ = "0.0.1"
 __short_description__ = "Learn to use pandas for data munging."
 __author__ = "Sanhe Hu"
 __license__ = "MIT"
+
+
+try:
+    from .utils import assert_value_equal, Timer
+except ImportError:
+    pass
