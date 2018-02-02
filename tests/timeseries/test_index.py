@@ -15,8 +15,10 @@ utc = pytz.utc
 utc8 = tzstr("UTC+08:00")
 epoch = datetime.utcfromtimestamp(0).replace(tzinfo=utc)
 
+
 assert get_utcoffset_in_seconds(utc) == 0
 assert get_utcoffset_in_seconds(utc8) == 3600 * 8
+
 
 # 对于时间序列而言，两个Index即使使用的是不同的时区，只要绝对时间相同，就会被视为
 # 相同的时间，从而能成功地join。
